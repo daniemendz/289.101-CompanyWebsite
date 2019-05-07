@@ -12,27 +12,34 @@
             
             .blue{
                 background-color: #3fb4ff;
-                height: 50px;
+                height: 100px;
             }
             
             .green{
-                
+                background-color: yellowgreen;
+                height:110px;
             }
             
             .orange{
-                
+                height:750px;
             }
             
             .maroon{
-                
+                background-color: maroon;
+                height:200px;
             }
             
-            .grey{
+            .gray{
+                background-color: gray;
+                height: 200px;
+                margin: 22px;
                 
             }
             
             .pink{
-                
+                background-color: violet;
+                height: 140px;
+                margin: 13px;
             }
             
             
@@ -43,12 +50,17 @@
 
             /*md*/
             @media (min-width: 768px) {
-                
+                .green{height: 200px;}
+                .orange{height: 500px;}
+                .maroon{height: 500px;}
+                .gray{height: 140px; margin: 13px;}
             }
 
             /*lg*/
             @media (min-width: 992px) {
-                
+                .blue{height: 80px;}
+                .green, .orange, .maroon {height: 1060px;}
+                .gray, .pink{margin: 18px;}
             }
 
             /*xl*/
@@ -68,9 +80,18 @@
             </div>
             
             <div class="row">
-                <div class="green"></div>
-                <div class="orange"></div>
-                <div class="maroon"></div>
+                <div class="green col-12 col-lg-3"></div>
+                <div class="orange col-12 col-md-6 col-lg-6">
+                    <div class="row">
+                        <div class="gray col-5 col-lg-4"></div> <div class="pink col-lg-6 d-none d-lg-block"></div>
+                        <div class="gray col-5 col-lg-4"></div> <div class="pink col-lg-6 d-none d-lg-block"></div>
+                        <div class="gray col-5 col-lg-4"></div> <div class="pink col-lg-6 d-none d-lg-block"></div>
+                        <div class="gray col-5 col-lg-4"></div> <div class="pink col-lg-6 d-none d-lg-block"></div>
+                        <div class="gray col-5 col-lg-4"></div> <div class="pink col-lg-6 d-none d-lg-block"></div>
+                        <div class="gray col-5 col-lg-4"></div> <div class="pink col-lg-6 d-none d-lg-block"></div>
+                    </div>
+                </div>
+                <div class="maroon col-12 col-md-6 col-lg-3"></div>
             </div>
         
         </div>
