@@ -2,10 +2,45 @@
 
 <html>
     <head>
-    
+        <title>Bootstrap</title>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/> <!--Mobile device backup-->
+        <link rel="stylesheet" href="css/bootstrap.min.css"/>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+        <style>
+            *{outline:#ccc solid 1px;}
+        </style>
     </head>
     
     <body>
-    
+        
+        <div class="container">
+            <div class="row no-gutters">
+                <div class="col-md-4">4</div> <!--"col--#" Columns # in any bootstrap row add up to 12-->
+                <div class="col-md-4">4</div> <!--"col-md-4" can be xs,sm,md,lg,xl Breakpoints of columns. Collapses into 1 column-->
+                <div class="col-md-4">4</div> <!--xs = mobile on portrait-->
+            </div>
+            
+            <div class="row no-gutters"> <!--no padding in cells-->
+                <div class="col-12 col-md-8 col-lg-6">12/8</div> <!--multiple sizes of cells-->
+                <div class="col-6 col-md-2 col-lg-3">6/2</div>
+                <div class="col-6 col-md-2 col-lg-3">6/2</div>
+            </div>
+            
+        </div>
+        
+        <h1>Fontawesome or octicons</h1>
+            <p><i class="fas fa-envelope" style="color:pink"></i> email@gmail.com</p>
+        
+        <h1>Collapsibles</h1>
+            How many days are there in a year?
+            <button data-toggle="collapse" data-target="#ans1">Show the answer</button>
+            <div id="ans1" class="collapse">
+                365.2422
+            </div>
+        
+        
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
     </body>
 </html>
