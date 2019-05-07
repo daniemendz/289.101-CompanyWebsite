@@ -16,23 +16,37 @@
             }
             
             .green{
-                background-color: #;
+                background-color: yellowgreen;
+                height: 120px;
+            }
+            
+            .orange{
+                background-color: orange;
+                height: 180px;
+            }
+            
+            .gray{
+                background-color: darkgray;
+                height: 60px;
             }
             
             
             /*sm*/
             @media (min-width: 576px) {
-                
+            
             }
 
             /*md*/
             @media (min-width: 768px) {
-                
+                .green{height: 180px;}
+                .orange{height: 120px;}
             }
 
             /*lg*/
             @media (min-width: 992px) {
-                
+                .green{height: 240px;}
+                .orange{height: 180px;}
+                .gray{height: 180px;}
             }
 
             /*xl*/
@@ -53,7 +67,20 @@
             </div>
             
             <div class="row">
-                <div class="green col-12">g</div>
+                <div class="green col-12"></div>
+            </div>
+            
+            <div class="row">
+                <div class="orange col-12 col-lg-4"></div>
+                <div class="orange col-12 col-lg-4"></div>
+                <div class="orange col-12 col-lg-4"></div>
+            </div>
+            
+            <div class="row"> <!--Hide and reveal div at md-->
+                <div class="gray col-6 col-lg-3 d-none d-md-block"></div>
+                <div class="gray col-6 col-lg-3 d-none d-md-block"></div>
+                <div class="gray col-6 col-lg-3 d-none d-md-block"></div>
+                <div class="gray col-6 col-lg-3 d-none d-md-block"></div>
             </div>
         
         </div>
