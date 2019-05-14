@@ -54,10 +54,11 @@
         <a id="eyes_down_btn">move eyes down</a>
         <a id="eyes_together_btn">move eyes closer together</a>
         <a id="eyes_far_btn">move eyes further apart</a>
-        <a>hollow eyes</a>
-        <a>solid eyes</a>
-        <a>no right eye</a>
-        <a>move mouth up</a>
+        <a id="hollow_btn">hollow eyes</a>
+        <a id="solid_btn">solid eyes</a>
+        <a id="hide_right_btn">no right eye</a>
+        <a id="show_right_btn">show right eye</a>
+        <a id="mouth_up_btn">move mouth up</a>
         <a>move mouth down</a>
         <a>happy mouth</a>
         <a>sad mouth</a>
@@ -84,8 +85,8 @@
         document.getElementById('eye_left').style.top = eye_left_y + 'px';
         document.getElementById('eye_right').style.left = eye_right_x + 'px';
         document.getElementById('eye_right').style.top = eye_right_y + 'px';
-        document.getElementById('mouth').style.left = mouth_x + 'px';
         document.getElementById('mouth').style.top = mouth_y + 'px';
+        document.getElementById('mouth').style.left = mouth_x + 'px';
 
         // move eyes up event listener
         document.getElementById('eyes_up_btn').addEventListener('click', function() {
@@ -115,6 +116,30 @@
             eye_right_x += 10;
             document.getElementById('eye_right').style.left = eye_right_x + 'px';
         });
+        
+        document.getElementById('hollow_btn').addEventListener('click', function() {
+            document.getElementById('eye_left').src="eye_hollow.svg";
+            document.getElementById('eye_right').src="eye_hollow.svg";
+        });
+        
+        document.getElementById('solid_btn').addEventListener('click', function() {
+            document.getElementById('eye_left').src="eye_solid.svg";
+            document.getElementById('eye_right').src="eye_solid.svg";
+        });
+        
+        document.getElementById('hide_right_btn').addEventListener('click', function() {
+            document.getElementById('eye_right').style.visibility="hidden";
+        });
+        document.getElementById('show_right_btn').addEventListener('click', function() {
+            document.getElementById('eye_right').style.visibility="visible";
+        });
+        
+        document.getElementById('mouth_up_btn').addEventListener('click', function() {
+            mouth_y -=10;
+            document.getElementById('mouth').style.top = mouth_y + 'px';
+        });
+            
+        
     </script>
 
 </body>
