@@ -36,7 +36,7 @@ function teleport(){
     
     if (puck_x > 600){
         console.log("WHY");
-        puck_x = 10
+        puck_x = 5
         puck.style.left= puck_x + "px";
     }
     
