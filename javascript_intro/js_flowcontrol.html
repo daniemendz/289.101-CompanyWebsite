@@ -7,11 +7,32 @@
     
     <body>
         
-        are you older than 18 but younger than 25?
+        GRADE:<br/>
+        
         <br/>
         <script>
-            var age = 20;
-            document.write(age >= 18 && age <= 25);
+            var mark = -80;
+            
+            
+            if (mark >100 || mark < 0 ){ //or = ||   and = && 
+                document.write("re-enter mark")
+            }
+            else if (mark >= 80){
+                document.write("A");
+            }
+            else if (mark >= 70){
+                document.write("B");
+            }
+            else if (mark >= 60){
+                document.write("C");
+            }
+            else if (mark >= 50) {
+                document.write('D');
+            }
+            else {
+                document.write('F');
+            }
+            
         </script>
     </body>
     
